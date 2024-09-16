@@ -1,25 +1,25 @@
 type Route = {
-  title: string,
-  path: string
-}
+  title: string;
+  path: string;
+};
 
 type FooterCol = {
-  title: string,
+  title: string;
   links: {
-    name: string,
-    link: string,
-    icon?: string,
-    leavesWebsite: boolean
-  }[]
-}
+    name: string;
+    link: string;
+    icon?: string;
+    leavesWebsite: boolean;
+  }[];
+};
 
 type Footer = {
-  columns: FooterCol[]
+  columns: FooterCol[];
   support: {
-    buymeacoffee: string
-    paypal: string
-    message: string
-  }
+    buymeacoffee: string;
+    paypal: string;
+    message: string;
+  };
 };
 
 export const routes: Route[] = [
@@ -32,15 +32,14 @@ export const routes: Route[] = [
   //   path: "/blog",
   // },
   {
-    title: "Projects",
-    path: "/projects",
+    title: "ChatBot",
+    path: "/",
   },
   {
-    title: "Designs",
-    path: "/designs",
+    title: "About Us",
+    path: "/aboutUs",
   },
 ];
-
 
 export const footer: Footer = {
   columns: [
