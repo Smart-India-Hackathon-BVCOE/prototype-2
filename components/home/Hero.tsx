@@ -14,10 +14,12 @@ function Hero() {
           <span className="heroShiny1 text-fun-pink">AICTE Portal:</span>{" "}
           Faster, Smarter, Transparent{" "}
           <img
-            className="sqD squiggle-hero-html w-16 top-[-90px] right-[5%] sm:top-[-90px] sm:right-[170px]"
-            style={{ animationDelay: "0.1s" }}
-            src="/static/doodles/hero/html.svg"
-          />
+  className="sqD squiggle-hero-html w-16 top-[-90px] right-[5%] sm:top-[-90px] sm:right-[170px]"
+  style={{ animationDelay: "0.1s" }}
+  src="/static/doodles/hero/audio-book.svg" // Correct path here
+  alt="Audio Book"
+/>
+
           <img
             className="sqD squiggle-hero-nextjs hidden top-[75px] right-0 w-11"
             style={{ animationDelay: "0.2s" }}
