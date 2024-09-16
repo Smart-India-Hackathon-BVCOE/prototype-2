@@ -33,7 +33,7 @@ export const routes: Route[] = [
   // },
   {
     title: "ChatBot",
-    path: "/",
+    path: "/chatbot",
   },
   {
     title: "About Us",
