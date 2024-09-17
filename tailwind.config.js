@@ -8,6 +8,7 @@ module.exports = {
     fontFamily: {
       sans: ["Be Vietnam Pro", "Inter", "system-ui", "sans"],
       monospace: ["DM Mono", "monospace"],
+      poppins: ['Poppins', 'sans-serif'],
     },
     colors: {
       black: colors.black,

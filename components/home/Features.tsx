@@ -3,36 +3,31 @@ import React from "react";
 function Features() {
   const features = [
     {
-      title: "Fast",
-      description:
-        "Experience lightning-fast performance and quick load times.",
+      title: "AI-Driven Verification",
+      description: "Uses advanced machine learning models to verify documents and ensure accuracy.",
     },
     {
-      title: "Optimized",
-      description:
-        "Our solution is optimized for maximum efficiency and minimal resource usage.",
+      title: "Real-Time Assistance",
+      description: "A chatbot powered by Llama offers instant support and personalized responses.",
     },
     {
-      title: "AI-Powered",
-      description:
-        "Leverage advanced AI technology for smarter, more intuitive interactions.",
+      title: "Automated Workflows",
+      description: "Fully automates the AICTE application process, from submission to verification.",
     },
     {
-      title: "User-Friendly Interface",
-      description:
-        "Designed with ease of use in mind, our interface ensures a seamless user experience.",
+      title: "Government Integration",
+      description: "Connects users to relevant government services and resources through seamless API integration.",
     },
     {
-      title: "Secure",
-      description:
-        "Top-notch security features to protect your data and ensure compliance with the latest standards.",
+      title: "Modern Interface",
+      description: "Built with NextJS, Django, and TailwindCSS for a clean, intuitive, and user-friendly experience.",
     },
     {
-      title: "24/7 Support",
-      description:
-        "Our dedicated support team is available around the clock to assist you with any issues.",
+      title: "Scalable Backend",
+      description: "Utilizes Vercel, PostgreSQL, and AWS S3 to ensure performance, scalability, and secure data storage.",
     },
   ];
+  
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen px-4 py-8 md:px-8 md:py-12">

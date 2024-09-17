@@ -7,13 +7,14 @@ function Navbar({ currentPage }) {
     <nav className="flex items-center justify-between">
       <li className="list-none font-bold text-lg cursor-pointer">
         <Link href="/">
-          <span className="font-black text-xl flex items-center">
+          <span className="font-black text-2xl flex items-center font-poppins">
             <img
-              className="mr-2 transform hover:rotate-360 hover:scale-75 transition-transform duration-500"
-              src="/aicte.png"
-              width="60"
+              className="mr-2 transform hover:rotate-360 hover:scale-110 transition-transform duration-500 w-20"
+              src="/history_edu_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+              alt="AICTE Logo"
             />
-            {"AICTE".split("").map((letter, index) => {
+
+            {"Evalytics".split("").map((letter, index) => {
               return (
                 <span
                   key={index}

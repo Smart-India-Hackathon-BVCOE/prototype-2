@@ -2,36 +2,37 @@ import React from "react";
 
 const transformations = [
   {
-    feature: "Fast",
-    oldProcess: "Processes were slow and time-consuming, leading to significant delays.",
-    newProcess: "Experience lightning-fast performance and quick load times, dramatically reducing delays and boosting productivity.",
+    feature: "AI-Driven Verification",
+    oldProcess: "Manual document verification was prone to errors and required significant time and effort.",
+    newProcess: "Utilizes advanced machine learning models to automate and enhance the accuracy of document verification, significantly reducing errors and processing time.",
   },
   {
-    feature: "Optimized",
-    oldProcess: "Inefficient resource usage led to higher costs and wasted time.",
-    newProcess: "Our solution is optimized for maximum efficiency and minimal resource usage, cutting costs and saving valuable time.",
+    feature: "Real-Time Assistance",
+    oldProcess: "Users had to navigate through complex forms and processes without immediate support.",
+    newProcess: "Provides instant help and personalized responses via an AI-powered chatbot, simplifying navigation and improving user experience.",
   },
   {
-    feature: "AI-Powered",
-    oldProcess: "Manual processes and outdated technology slowed down decision-making and operations.",
-    newProcess: "Leverage advanced AI technology for smarter, more intuitive interactions, enhancing decision-making and streamlining operations.",
+    feature: "Automated Workflows",
+    oldProcess: "The application process involved numerous manual steps, leading to inefficiencies and delays.",
+    newProcess: "Automates the entire application process from submission to verification, streamlining workflows and reducing manual effort.",
   },
   {
-    feature: "User-Friendly Interface",
-    oldProcess: "Complex and confusing interfaces made training and adoption difficult.",
-    newProcess: "Our user-friendly interface simplifies navigation and training, making it easier to get started and use effectively.",
+    feature: "Government Integration",
+    oldProcess: "Users had to access multiple platforms and services separately for various government-related tasks.",
+    newProcess: "Seamlessly connects users to relevant government services and resources directly through integrated APIs, enhancing accessibility and convenience.",
   },
   {
-    feature: "Secure",
-    oldProcess: "Inadequate security measures exposed data to risks and non-compliance.",
-    newProcess: "Robust security features protect your data and ensure compliance with the latest standards, safeguarding your information effectively.",
+    feature: "Modern Interface",
+    oldProcess: "Outdated and clunky interfaces hindered user interaction and overall efficiency.",
+    newProcess: "Built with modern technologies for a clean, intuitive interface that enhances user experience and simplifies interactions.",
   },
   {
-    feature: "24/7 Support",
-    oldProcess: "Limited support hours led to extended downtime and unresolved issues.",
-    newProcess: "Our 24/7 support ensures that any issues are promptly addressed, minimizing downtime and keeping operations smooth.",
+    feature: "Scalable Backend",
+    oldProcess: "Previous systems struggled with performance and scalability issues due to limited backend capabilities.",
+    newProcess: "Employs a scalable backend architecture with Vercel, PostgreSQL, and AWS S3, ensuring high performance, scalability, and secure data storage.",
   },
 ];
+
 
 function Transformation() {
   return (
