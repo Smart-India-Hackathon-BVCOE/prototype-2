@@ -6,7 +6,8 @@ import Image from "next/image";
 function Footer() {
   return (
     <footer className="flex flex-col w-screen px-5 py-10 border-t border-fun-pink-darker z-5 bg-bg">
-      <div className="w-full max-w-4xl m-auto grid grid-cols-2 sm:grid-cols-3 justify-between items-start">
+      {/* Uncomment the following section if needed */}
+      {/* <div className="w-full max-w-4xl m-auto grid grid-cols-2 sm:grid-cols-3 justify-between items-start">
         {footer.columns.map((item, index) => {
           return (
             <div key={index} className="text-left mb-5 sm:mb-0">
@@ -76,40 +77,14 @@ function Footer() {
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
       <div className="max-w-4xl w-full m-auto mt-8 pt-8 sm:mt-4 sm:pt-4 text-center text-fun-gray border-t border-fun-pink-dark">
-        <p className="flex flex-col items-center justify-center ">
+        <p className="flex flex-col items-center justify-center">
           <div className="inline-flex items-center uppercase text-xs font-bold tracking-widest">
             Made with{" "}
-            <div className="space-x-2 inline-flex items-center -mt-1 ml-3">
-              <span>
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-                  width="26"
-                  title="React"
-                />
-                <span className="sr-only">React</span>
-              </span>
-              <span>
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg"
-                  width="40"
-                  className="invert"
-                  title="NextJS"
-                />
-                <span className="sr-only">NextJS</span>
-              </span>
-              <span>
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
-                  width="26"
-                  title="TailwindCSS"
-                />
-                <span className="sr-only">TailwindCSS</span>
-              </span>
-            </div>
+            <span role="img" aria-label="heart">❤️</span> for SIH
           </div>
-          <div className="mt-2 text-xs ">
+          {/* <div className="mt-2 text-xs">
             Made by{" "}
             <a
               href="mailto:contact@braydentw.io"
@@ -118,7 +93,7 @@ function Footer() {
               Brayden Wright
             </a>
             . All rights reserved.
-          </div>
+          </div> */}
         </p>
       </div>
       <div className="mt-8 text-center sm:text-right sm:-mt-12">
@@ -126,7 +101,7 @@ function Footer() {
           className="w-auto inline-flex items-center sm:w-auto font-bold flex-shrink text-xs border border-fun-pink px-4 py-2 rounded-xl text-fun-pink cursor-pointer opacity-50"
           href="https://github.com/braydentw/braydentw.io"
           target="_blank"
-          rel="nooreferrer"
+          rel="noopener noreferrer"
         >
           <Image
             src="/static/icons/github.svg"
@@ -134,7 +109,7 @@ function Footer() {
             height={16}
             alt="Github Icon"
           />
-          <span className="ml-2">View Source Code </span>
+          <span className="ml-2">View Source Code</span>
         </a>
       </div>
     </footer>

@@ -14,7 +14,7 @@ const advantages = [
     description: "Remembers the context of conversations to provide more relevant and accurate responses.",
   },
   {
-    title: "Integration with Government Services",
+    title: "Govt Services Integration",
     description: "Connects users to relevant government services and resources directly from the chat interface.",
   },
   {
@@ -27,28 +27,45 @@ const advantages = [
   },
 ];
 
-function Advantages() {
+function CheckIcon() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen px-4 py-8 md:px-8 md:py-12">
-      <h2 className="text-2xl md:text-3xl text-center font-bold mb-8 md:mb-12">
-        Discover the Advantages
-        <br />
-        That Benefit You
-      </h2>
-
-      <div className="relative max-w-full mx-auto grid gap-x-8 gap-y-12 sm:gap-8 md:gap-12 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
-        {advantages.map((item, index) => (
-          <div
-            key={index}
-            className="w-full flex flex-col items-center text-center p-6 border border-gray-300 rounded-lg shadow-md h-72 flex-shrink-0"
-          >
-            <h3 className="text-lg md:text-xl font-bold mb-2">{item.title}</h3>
-            <p className="text-sm text-gray-600">{item.description}</p>
-          </div>
-        ))}
-      </div>
-    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5">
+      <polyline points="20 6 9 17 4 12"></polyline>
+    </svg>
   );
 }
 
-export default Advantages;
+function AdvantageCard({ title, description }) {
+  return (
+    <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 h-full transition-all duration-300 hover:shadow-lg hover:scale-105">
+  <div className="flex items-center gap-4 mb-4">
+    <div className="w-8 h-8 rounded-full bg-blue-500 flex items-center justify-center">
+      <CheckIcon />
+    </div>
+    <h3 className="text-xl font-bold text-gray-900 dark:text-white text-left">{title}</h3>
+  </div>
+  <p className="text-gray-600 dark:text-gray-300 text-left">{description}</p>
+</div>
+
+  );
+}
+
+export default function Advantages() {
+  return (
+    <section className="py-16 px-4 md:px-8 bg-gray-50 dark:bg-gray-900">
+      <div className="max-w-6xl mx-auto">
+        <h2 className="text-4xl md:text-5xl font-extrabold text-center mb-12 text-gray-900 dark:text-white">
+          Discover{" "}
+          <span className="bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">
+            The Advantages
+          </span>
+        </h2>
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          {advantages.map((item, index) => (
+            <AdvantageCard key={index} {...item} />
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}

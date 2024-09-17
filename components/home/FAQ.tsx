@@ -35,29 +35,33 @@ function FAQ() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen px-4 py-8 md:px-8 md:py-12">
-      <h2 className="text-2xl md:text-3xl text-center font-bold mb-8 md:mb-12">
-        Frequently Asked Questions
-        <br />
-        Find Answers to Common Queries
-      </h2>
+    <div className="flex flex-col items-center justify-center min-h-screen px-4 py-8 md:px-8 md:py-12 bg-gray-50 dark:bg-gray-900">
+      <h1 className="mb-10 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
+        Frequently {" "}
+        <span className="underline underline-offset-3 decoration-[#00c7ff] dark:decoration-[#00c7ff] decoration-8">
+          Asked Questions
+        </span>
+      </h1>
 
-      <div className="relative max-w-full mx-auto grid gap-x-8 gap-y-12 sm:gap-8 md:gap-12 grid-cols-1">
+      <div className="w-full max-w-3xl mx-auto space-y-4">
         {faqs.map((faq, index) => (
           <div
             key={index}
-            className="w-full flex flex-col items-center text-center p-4 border border-gray-300 rounded-lg shadow-md"
+            className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-md overflow-hidden relative"
           >
+            <div className="absolute inset-0 border-2 border-[#00c7ff] rounded-lg pointer-events-none"></div>
             <button
               onClick={() => toggleAccordion(index)}
-              className="w-full text-left p-4 font-semibold flex justify-between items-center bg-gray-100 text-gray-600"
+              className="w-full text-left p-6 font-semibold flex justify-between items-center bg-white dark:bg-gray-800 text-gray-900 dark:text-white hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors duration-200 relative z-10"
             >
-              <span className="text-lg">{faq.question}</span>
-              <span className="text-lg">{openIndex === index ? '-' : '+'}</span>
+              <span className="text-lg pr-8">{faq.question}</span>
+              <span className="text-[#00c7ff] font-bold text-xl">
+                {openIndex === index ? '−' : '+'}
+              </span>
             </button>
             {openIndex === index && (
-              <div className="p-4 bg-gray-50">
-                <p className="text-gray-700">{faq.answer}</p>
+              <div className="p-6 bg-gray-50 dark:bg-gray-700 relative z-10">
+                <p className="text-gray-700 dark:text-gray-300">{faq.answer}</p>
               </div>
             )}
           </div>
