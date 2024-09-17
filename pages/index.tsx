@@ -8,6 +8,7 @@ import Testimonials from "@/components/home/Testimonials";
 import Advantages from "@/components/home/Advantages";
 import Transformation from "@/components/home/Transformation";
 import FAQ from "@/components/home/FAQ";
+import { useEffect, useState } from 'react';
 
 // import { allPosts } from "contentlayer/generated";
 // import { GetStaticProps } from "next";
@@ -21,6 +22,16 @@ import FAQ from "@/components/home/FAQ";
 // }
 
 export default function Home() {
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  if (!isClient) {
+    return null;
+  }
+
   return (
     <Page
       currentPage="Home"
