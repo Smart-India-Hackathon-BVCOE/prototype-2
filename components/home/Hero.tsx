@@ -58,7 +58,7 @@ function Hero() {
           src="/static/doodles/hero/code.svg"
         />
       </h1>
-      <Link href="\components\aboutUs\AboutUs.tsx" passHref>
+      <Link href="/aboutUs" passHref>
         <div className="cursor-pointer font-bold whitespace-nowrap px-10 py-4 text-fun-white border-2 text-xl rounded-full border-fun-white bg-bg hover:bg-fun-pink hover:text-white hover:border-fun-pink transition-colors">
           Tell me more
         </div>
