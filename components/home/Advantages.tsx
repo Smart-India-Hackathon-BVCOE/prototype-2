@@ -39,7 +39,7 @@ function AdvantageCard({ title, description }) {
   return (
     <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 h-full transition-all duration-300 hover:shadow-lg hover:scale-105">
   <div className="flex items-center gap-4 mb-4">
-    <div className="w-8 h-8 rounded-full bg-blue-500 flex items-center justify-center">
+    <div className="w-8 h-8 rounded-full bg-[#00c7ff] flex items-center justify-center">
       <CheckIcon />
     </div>
     <h3 className="text-xl font-bold text-gray-900 dark:text-white text-left">{title}</h3>
@@ -56,7 +56,7 @@ export default function Advantages() {
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-extrabold text-center mb-12 text-gray-900 dark:text-white">
           Discover{" "}
-          <span className="bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-[#00c7ff] to-cyan-500 bg-clip-text text-transparent">
             The Advantages
           </span>
         </h2>
